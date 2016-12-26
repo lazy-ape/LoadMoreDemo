@@ -118,7 +118,7 @@ public class LoadMoreListView extends ListView {
     }
 
     /**
-     * 判断listview是否满一屏
+     * is more than one screen
      */
     private boolean isScreenFull(AbsListView absListView, int firstVisibleItem,
                                  int visibleItemCount, int totalItemCount) {

@@ -8,7 +8,7 @@ import android.view.View;
  * Created by xuqiang on 2016/12/23.
  */
 
-public class LoadMoreFooter {
+public  class LoadMoreFooter {
 
     public static enum State{
         Idle,End,Loading
@@ -23,9 +23,13 @@ public class LoadMoreFooter {
     private View mEndView;
 
     public LoadMoreFooter(Context context){
+        this(context,R.layout.load_more_footer);
+    }
+
+    public LoadMoreFooter(Context context,int layoutId){
 
         this.mContext = context;
-        mFootView = LayoutInflater.from(context).inflate(R.layout.load_more_footer,null);
+        mFootView = LayoutInflater.from(context).inflate(layoutId,null);
         mFootView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +43,7 @@ public class LoadMoreFooter {
         mFootView.setVisibility(View.GONE);
         setState(State.Idle);
     }
+
 
     public View getView() {
         return mFootView;
