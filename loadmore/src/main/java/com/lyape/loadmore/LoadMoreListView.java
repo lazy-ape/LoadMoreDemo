@@ -113,7 +113,7 @@ public class LoadMoreListView extends ListView {
         }
     }
 
-    public void setLoadMoreCallback(ILoadMoreCallback callback) {
+    public void setLoadMoreListener(ILoadMoreCallback callback) {
         this.mLoadMoreCallback = callback;
     }
 

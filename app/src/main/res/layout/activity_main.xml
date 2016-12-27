@@ -7,8 +7,8 @@
     android:layout_height="match_parent"
     tools:context="com.lyape.loadmoredemo.MainActivity">
 
-    <com.lyape.loadmore.LoadMoreListView
+    <com.lyape.loadmore.LoadMoreRecyclerView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.lyape.loadmore.LoadMoreListView>
+        android:layout_height="match_parent"></com.lyape.loadmore.LoadMoreRecyclerView>
 </RelativeLayout>
